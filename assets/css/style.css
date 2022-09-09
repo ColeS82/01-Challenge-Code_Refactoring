@@ -7,24 +7,24 @@
 body {
     background-color: #d9dcd6;
 }
-
-.header {
+/*replaced .header with header*/
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
-.header h1 .seo {
+/*header h1 .seo unnesessary, shortened to .seo*/ 
+.seo {
     color: #d9dcd6;
 }
-
-.header div {
+/*replaced header div with header nav*/
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,11 +32,11 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
+header nav ul {
     list-style-type: none;
 }
 
-.header div ul li {
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -49,8 +49,8 @@ a {
 p {
     font-size: 16px;
 }
-
-.hero {
+/*replaced .content with figure*/
+figure {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -59,6 +59,7 @@ p {
     background-position: center;
 }
 
+/* MERGED WITH RESPECTIVE CLASS IMG SELECTORS BELOW
 .float-left {
     float: left;
     margin-right: 25px;
@@ -68,8 +69,8 @@ p {
     float: right;
     margin-left: 25px;
 }
-
-.content {
+*/
+main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
@@ -86,11 +87,12 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+.benefit-lead, .benefit-brand, .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/*Applied redundant styles to selector group above
 .benefit-brand {
     margin-bottom: 32px;
     color: #ffffff;
@@ -100,7 +102,9 @@ p {
     margin-bottom: 32px;
     color: #ffffff;
 }
+*/
 
+/*removed redundant selectors
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -110,8 +114,9 @@ p {
     margin-bottom: 10px;
     text-align: center;
 }
-
-.benefit-cost h3 {
+*/
+/* shortened from .benefit-cost to h3*/
+h3 {
     margin-bottom: 10px;
     text-align: center;
 }
@@ -160,19 +165,25 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
-
+/*merged properties from .float-left*/
 .search-engine-optimization img {
     max-height: 200px;
+    float: left;
+    margin-right: 25px;
 }
-
+/*merged properties from .float-rigt*/
 .online-reputation-management img {
     max-height: 200px;
+    float: right;
+    margin-left: 25px;
 }
-
+/*merged properties from .float-left*/
 .social-media-marketing img {
     max-height: 200px;
+    float: left;
+    margin-right: 25px;
 }
-
+/*removed redundant element selectors
 .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -182,19 +193,20 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
-.social-media-marketing h2 {
+*/
+/*shortened from .social-media-marketing to h2*/
+h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
-.footer {
+/*replaced .footer with footer*/
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
-.footer h2 {
+/*replaced .footer h2 with footer h2*/
+footer h2 {
     font-size: 20px;
 }
